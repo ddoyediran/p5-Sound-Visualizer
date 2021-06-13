@@ -1,6 +1,7 @@
 let mySound;
 let amplitude;
 
+// to preload the sound
 function preload() {
   mySound = loadSound('music.mp3');
 }
@@ -20,7 +21,6 @@ function draw() {
   let level = amplitude.getLevel();
   let diam = map(level, 0, 1, 10, 400);
   ellipse(displayWidth / 2, displayHeight / 2,diam, diam);
-  //ellipse(150,150,diam,diam);
 }
 
 // to play and stop the sound
